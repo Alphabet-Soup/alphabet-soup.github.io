@@ -1,31 +1,127 @@
+<!DOCTYPE html> 
 <html>
     <head>
         <title>
             Alphabet-Soup Home
         </title>
         
-        <base href="http://alphabet-soup.github.io"/>
-        <link rel="stylesheet" href="style.css"/>
+        <base href="file:///C:/Users/Josh/Desktop/programming%20stuff/github/alphabet-soup temp/"/>
+      <!--  <link rel="stylesheet" href="style.css"/> -->
+        <style type="text/css">
+             /**{ border: 1px dashed black; } */
+
+            body { 
+                background-color: #b95835; 
+            }
+           
+            #container { 
+                position: absolute; 
+                width: 75%; 
+            
+            } 
+            
+            #top-nav { 
+                position: absolute;
+                display: block;
+                width: 120px; 
+                height: 100%;                
+                border: 2px solid black;
+                background-color: #e18942; 
+                
+            }  
+        
+            #nav-links {
+                position: relative;
+                text-align: center; 
+                margin-top: 140px; 
+                
+            }
+            #nav-links a {
+            
+                position: relative;
+                font-weight: bold;
+                display: block;
+                margin-top: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 100%;
+                text-decoration: none;
+                color: #3d3242;
+            
+            }
+            #nav-links a:hover {
+                background-color: #eecd86;
+            } 
+            
+            #content {   
+                background-color: #eecd86; 
+                position: relative;
+                left: 126px;
+                height: 100%; 
+                border: 2px solid black;
+                padding: 10px;
+            }
+            
+            .entry {
+                clear: right;
+            }
+
+            .entry-head h1{
+                display: inline-block;
+                margin: 0px;
+            }
+            
+            .entry-head p{
+                margin: 0px;
+            }
+            
+            .image-container {
+                border: 2px solid black;
+                overflow-y: scroll;
+                padding: 10px;
+                margin: 10px;
+                width: 275px;
+                height: 325px;
+                float: right;
+            }
+            .image-container img {
+                height: 75px;
+                width: 75px;
+                margin: 3px;
+            }
+            
+            .center {
+                text-align:center;
+            }
+            
+            .title {
+                font-family: Tahoma;
+            }
+            
+        </style>
     </head>
     
     <body>
-        <div id="banner">
-            <img src="alphabet-soup-banner.png" title="Alphabet-Soup"/>
-        </div>
-        
+
+
+    <div id="container">
         <div id="top-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Scripts</a></li>
-                <li><a href="https://github.com/Alphabet-Soup">GitHub</a></li>
-                <li><a href="about/index.html">About</a></li>
-            </ul>
+            <div id="nav-links">
+               <a href="index.html">Home</a>
+               <a href="#">Scripts</a>
+               <a href="https://github.com/Alphabet-Soup">GitHub</a>
+               <a href="about/index.html">About</a>
+            </div>
         </div>
-        
+        <div>
         <div id="content">
+
+            <h1 class="center title"> 
+                Alphabet-Soup
+            </h1>
             <div class="entry">
                 <div class="entry-head">
-                    <h1 class="title">Lorem ipsum dolor sit amet.</h1>
+                    <h2 class="title">Lorem ipsum dolor sit amet.</h1>
                     <p class="tag">
                         <a href="about/index.html" class="author">Joe Shmoe</a>
                         on
@@ -69,7 +165,7 @@
             
             <div class="entry">
                 <div class="entry-head">
-                    <h1 class="title">Lorem ipsum dolor sit amet.</h1>
+                    <h2 class="title">Lorem ipsum dolor sit amet.</h1>
                     <p class="tag">
                         <a href="about/index.html" class="author">Joe Shmoe</a>
                         on
@@ -105,7 +201,8 @@
                 </div>
             </div>
         </div>
-            
+        </div>
+    </div>
     </body>
     
 </html>
