@@ -172,7 +172,7 @@ function getLinkType(subreddit){
     }
     
     if (getThingType(subreddit) === "comment"){
-        return "comment;
+        return "comment";
     }
     
     return "unknown";
