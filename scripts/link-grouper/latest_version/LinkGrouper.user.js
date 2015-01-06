@@ -155,7 +155,7 @@ function getThingType(subreddit){
         return "link";
     }
     
-    return "";
+    return "unknown";
     
 }
 
@@ -171,7 +171,11 @@ function getLinkType(subreddit){
         }
     }
     
-    return "";
+    if (getThingType(subreddit) === "comment"){
+        return "comment;
+    }
+    
+    return "unknown";
 }
 function clearSiteTable(){
   sitetable = document.getElementById("siteTable");
